@@ -8,7 +8,7 @@ RUN mv /opt/vmug/nginx.conf /etc/nginx/nginx.conf
 
 RUN service nginx stop && service nginx start
 
-CMD python /opt/vmug/dockervmug.py
+CMD [ "python", "./opt/vmug/dockervmug.py" ]
  
 dockervmug.py
 EXPOSE 5000 5001
